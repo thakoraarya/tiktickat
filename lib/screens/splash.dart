@@ -25,7 +25,7 @@ class _SplashState extends State<Splash> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image(image: AssetImage('assets/images/splashImage.png')),
+        const  Image(image: AssetImage('assets/images/splashImage.png')),
             Text(
               'टिकटिकट',
               style: Theme.of(context)

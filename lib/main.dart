@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:tiktickat/screens/auth.dart';
+import 'package:tiktickat/screens/home.dart';
 import 'package:tiktickat/screens/splash.dart';
 
 void main() => runApp(MaterialApp.router(
@@ -21,6 +23,12 @@ final GoRouter _router = GoRouter(
           path: 'auth',
           builder: (BuildContext context, GoRouterState state) {
             return const Auth();
+          },
+        ),
+        GoRoute(
+          path: 'home',
+          builder: (BuildContext context, GoRouterState state) {
+            return const Home();
           },
         ),
       ],
